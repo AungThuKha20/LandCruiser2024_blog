@@ -6,6 +6,10 @@ import About from "./Components/About";
 import Comparison from "./Components/Comparison";
 import "@mantine/carousel/styles.css";
 
+import { Route, Routes } from "react-router-dom";
+import Details from "./Components/Details";
+import Capibality from "./Components/Capibality";
+
 const App = () => {
   return (
     <div className=" overflow-hidden">
@@ -13,6 +17,7 @@ const App = () => {
       <Home />
       <About />
       <Comparison />
+      <Details />
     </div>
   );
 };

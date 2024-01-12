@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import logo from "../images/logo.jpg";
 import { GeneralContext } from "../Context/GeneralContext";
-// import { CiMenuBurger } from "react-icons/ci";
+
+import { MdMenu } from "react-icons/md";
+import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const { menu, handleMenu } = useContext(GeneralContext);
@@ -25,9 +27,9 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className=" mx-4 flex justify-between items-center">
+      <div className=" mx-4 py-2 flex justify-between items-center">
         <div>
-          <img src={logo} className=" h-[50px]   " alt="" />
+          <img src={logo} className=" md:h-[50px] h-[40px]   " alt="" />
         </div>
         <div className=" ">
           <div className=" md:flex hidden gap-10 me-6">
@@ -42,24 +44,25 @@ const Navbar = () => {
               );
             })}
           </div>
-          <div className=" md:hidden visible">
-            <button onClick={() => handleMenu()}>Menu</button>
+          <div
+            className=" me-2 flex items-center
+           md:hidden visible"
+          >
+            <button className=" hover:bg-gray-100" onClick={() => handleMenu()}>
+              {menu ? (
+                <IoClose size={30} className="py-1 px-1 border border-black" />
+              ) : (
+                <MdMenu className=" py-1 px-1 border border-black" size={30} />
+              )}
+            </button>
           </div>
         </div>
       </div>
       <div
         className={` ${
           menu ? "right-0" : " -right-full"
-        } fixed z-30 top-0 md:hidden transition-all duration-200 shadow-md shadow-black  w-[70vw] h-[100vh]    bg-white`}
+        } fixed z-30 top-10 md:hidden transition-all duration-200 shadow-md shadow-black  w-[80vw] h-[100vh]    bg-white`}
       >
-        <div className=" flex justify-end mx-4 my-2">
-          <button
-            onClick={() => handleMenu()}
-            className="  px-4 py-2 hover:bg-gray-300 rounded-full border-[1px]"
-          >
-            close
-          </button>
-        </div>
         <div className="flex flex-col items-center mt-10 ">
           {Links.map((el) => {
             return (

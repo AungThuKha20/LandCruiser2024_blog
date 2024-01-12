@@ -7,7 +7,7 @@ const About = () => {
   const [emblaRef] = useEmblaCarousel();
   return (
     <div className=" w-full h-full">
-      <div className=" flex flex-col w-full items-center mx-2 justify-center  mt-[50px]  md:mt-[150px]">
+      <div className=" flex flex-col w-full items-center mx-2 justify-center  mt-[50px]  md:mt-[100px]">
         <h1 className=" md:text-[40px] text-[25px] font-serif font-bold">
           Peak of Every Adventure
         </h1>
