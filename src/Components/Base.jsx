@@ -8,11 +8,11 @@ const Base = () => {
         <div className=" flex justify-center">
           <img src={toyota} className=" w-[100px] md:w-[200px]" alt="" />
         </div>
-        <p className=" text-[20px] font-semibold">
+        <p className=" text-[16px] md:text-[20px] font-semibold">
           Proud to research About Land Cruiser
         </p>
       </div>
-      <div className=" mt-3 text-center font-semibold text-[18px] text-gray-800">
+      <div className=" mt-3 text-center font-semibold text-[16px] md:text-[18px] text-gray-800">
         <p>
           ©2024 Toyota Motor Sales, U.S.A., Inc. All information applies to U.S.
           vehicles only.
@@ -23,7 +23,7 @@ const Base = () => {
           Section 220506.
         </p>
       </div>
-      <div className=" mt-2 text-center font-bold text-[16px]">
+      <div className=" mt-2 text-center font-bold text-[14px] md:text-[16px]">
         <span>
           <a className=" mx-4" href="">
             Privacy Notice
