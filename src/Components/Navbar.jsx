@@ -61,7 +61,7 @@ const Navbar = () => {
       <div
         className={` ${
           menu ? "right-0" : " -right-full"
-        } fixed z-30 top-10 md:hidden transition-all duration-200 shadow-md shadow-black  w-[80vw] h-[100vh]    bg-white`}
+        } fixed z-30 top-15 md:hidden transition-all duration-200 shadow-md shadow-black  w-[80vw] h-[100vh]    bg-white`}
       >
         <div className="flex flex-col items-center mt-10 ">
           {Links.map((el) => {

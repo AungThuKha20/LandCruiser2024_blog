@@ -6,12 +6,12 @@ import useEmblaCarousel from "embla-carousel-react";
 const About = () => {
   const [emblaRef] = useEmblaCarousel();
   return (
-    <div className=" w-full h-full">
-      <div className=" flex flex-col w-full items-center mx-2 justify-center  mt-[50px]  md:mt-[100px]">
+    <div className=" w-full h-full px-4">
+      <div className=" flex flex-col w-full items-center  justify-center  mt-[50px]  md:mt-[100px]">
         <h1 className=" md:text-[40px] text-[25px] font-serif font-bold">
           Peak of Every Adventure
         </h1>
-        <p className=" font-semibold md:w-[700px] text-center md:my-10 my-6 md:text-[20px] mx-4 md:mx-0  ">
+        <p className=" md:font-semibold font-medium md:w-[700px] text-center md:my-10 my-6 md:text-[20px] text-[18px]  md:mx-0  ">
           Introducing the all-new 2024 Land Cruiser, with no fuss, no muss—just
           the way you remember it. With prices starting in the mid-$50,000
           range, * Land Cruiser brings back the thrill and excitement of
@@ -31,9 +31,9 @@ const About = () => {
           <img src={about2} className=" w-[45vw] rounded-md  h-auto" alt="" />
         </div>
         <div className="embla lg:hidden visible mx-4 py-4" ref={emblaRef}>
-          <div className="embla__container">
+          <div className="embla__container flex">
             <div className="embla__slide">
-              <img src={about1} alt="" />
+              <img src={about1} className=" w-[95vw]" alt="" />
             </div>
             <div className="embla__slide">
               <img src={about2} alt="" />
