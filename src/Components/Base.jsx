@@ -1,12 +1,12 @@
 import React from "react";
 import toyota from "../images/toyota.png";
 
-const Footer = () => {
+const Base = () => {
   return (
     <div className=" flex  flex-col mt-10 mx-4">
       <div className=" text-center">
         <div className=" flex justify-center">
-          <img src={toyota} className=" w-[100px] md:w-[250px]" alt="" />
+          <img src={toyota} className=" w-[100px] md:w-[200px]" alt="" />
         </div>
         <p className=" text-[20px] font-semibold">
           Proud to research About Land Cruiser
@@ -42,4 +42,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Base;

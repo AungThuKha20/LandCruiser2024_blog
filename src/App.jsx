@@ -8,7 +8,7 @@ import "@mantine/carousel/styles.css";
 
 import { Route, Routes } from "react-router-dom";
 import Details from "./Components/Details";
-import Footer from "./Components/footer";
+import Base from "./Components/Base";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
       <About />
       <Comparison />
       <Details />
-      <Footer />
+      <Base />
     </div>
   );
 };
